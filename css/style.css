@@ -16,7 +16,7 @@ a,
 a:focus,
 a:hover {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #1CD6D9;
+    color: #9acd32;
     text-decoration: none;
 }
 
@@ -39,7 +39,7 @@ button {
 /* turquise headings with Space Grotesk font */
 h1, h2, h3, h4, h5 {
     font-family: 'Space Grotesk', 'Trebuchet MS', 'Lucida Sans Unicode', sans-serif;
-    color:#1CD6D9;
+    color:#228B22;
 }
 
 /* special formatting for "x" on buttons (currently not used) */
@@ -100,8 +100,8 @@ h1, h2, h3, h4, h5 {
 
 /* inner info container */
 .info {
-    background-color: rgba(30, 33, 40, 1);
-    outline: 4px solid rgba(255, 255, 255, 0.4);
+    background-color: #FFFFFF;
+    outline: 4px solid #000000;
     outline-width: 1px;
     z-index: 9999;
     border-radius: 2rem;
@@ -112,24 +112,6 @@ h1, h2, h3, h4, h5 {
     flex: 1 1 auto;
     pointer-events: visiblePainted;
     overflow-y: scroll;
-}
-
-/* inner chart container */
-.chart {
-    background-color: rgba(30, 33, 40, 1);
-    outline: 4px solid rgba(255, 255, 255, 0.4);
-    outline-width: 1px;
-    z-index: 9999;
-    border-radius: 2rem;
-    margin: 20px;
-    padding: 20px;
-    height: 100%;
-    flex: 1 1 auto;
-    /* this will make the charts grow and shrink as necessary */
-    min-width: calc(100% / 4 - 2%);
-    /* adjust the fraction based on the number of charts you want to display */
-    max-width: calc(100% / 1 - 2%);
-    pointer-events:all;
 }
 
 /* styling for the svgs inside buttons (see mapbox override section) */
@@ -187,10 +169,10 @@ h1, h2, h3, h4, h5 {
 
 /* change colors to dark grey to emphasize icon */
 .mapboxgl-ctrl-group {
-    outline: solid rgba(255, 255, 255, .4) !important;
+    outline: solid #235347 !important;
     outline-width: 1px !important;
     border-radius: 2.5vh !important;
-    background: rgba(30, 33, 40, 1) !important;
+    background: #FFF !important;
 }
 .mapboxgl-ctrl-group button+button {
     border-top: 0px solid #ddd !important;
