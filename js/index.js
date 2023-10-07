@@ -71,81 +71,96 @@ map.on('load', () => {
         type: 'vector',
         url: 'mapbox://samgartrell.90qiybtk'
     });
+    
 
     map.addLayer(
         {
             'id': 'oyster-data',
-            'type': 'circle',
+            'type': 'symbol',
             'source': 'oyster',
             'source-layer': '0004028-231002084531237-cxxg5n',
-            'paint': {
-                'circle-color': '#D0A1E0'
+            'layout': {
+                'icon-image': 'oyster_raw-min-500',
+                'icon-size': .4, // Adjust the size of the custom icon
+                'icon-allow-overlap': true,
             }
         }
     );
     map.addLayer(
         {
             'id': 'field-data',
-            'type': 'circle',
+            'type': 'symbol',
             'source': 'field',
             'source-layer': '0004032-231002084531237-cejws8',
-            'paint': {
-                'circle-color': '#62A458'
+            'layout': {
+                'icon-image': 'field_raw-min-500',
+                'icon-size': .4, // Adjust the size of the custom icon
+                'icon-allow-overlap': true,
             }
         }
     );
     map.addLayer(
         {
             'id': 'lion-data',
-            'type': 'circle',
+            'type': 'symbol',
             'source': 'lion',
             'source-layer': '0004037-231002084531237-2rxebf',
-            'paint': {
-                'circle-color': '#C94E77'
+            'layout': {
+                'icon-image': 'lion_raw-min-500',
+                'icon-size': .4, // Adjust the size of the custom icon
+                'icon-allow-overlap': true,
             }
         }
     );
     map.addLayer(
         {
             'id': 'chanterelle-data',
-            'type': 'circle',
+            'type': 'symbol',
             'source': 'chanterelle',
             'source-layer': '0004016-231002084531237-04mg15',
-            'paint': {
-                'circle-color': '#8E6B23'
+            'layout': {
+                'icon-image': 'chant_raw-min-500',
+                'icon-size': .3, // Adjust the size of the custom icon
+                'icon-allow-overlap': true,
             }
         }
     );
     map.addLayer(
         {
             'id': 'edulis-data',
-            'type': 'circle',
+            'type': 'symbol',
             'source': 'edulis',
             'source-layer': '0004023-231002084531237-30mrpo',
-            'paint': {
-                'circle-color': '#B7D3E9'
+            'layout': {
+                'icon-image': 'bolete_raw-min-500',
+                'icon-size': .3, // Adjust the size of the custom icon
+                'icon-allow-overlap': true,
             }
         }
     );
     map.addLayer(
         {
             'id': 'milk-data',
-            'type': 'circle',
+            'type': 'symbol',
             'source': 'milk',
             'source-layer': '0004025-231002084531237-7ywiw5',
-            'paint': {
-                'circle-color': '#F58A42'
+            'layout': {
+                'icon-image': 'oyster_raw-min-500',
+                'icon-size': .3, // Adjust the size of the custom icon
+                'icon-allow-overlap': true,
             }
         }
     );
     map.addLayer(
         {
             'id': 'morel-data',
-            'type': 'circle',
+            'type': 'symbol',
             'source': 'morel',
             'source-layer': '0004018-231002084531237-dv2dh7',
-            'paint': {
-                'circle-color': '#4F7DAA'
+            'layout': {
+                'icon-image': 'oyster_raw-min-500',
+                'icon-size': .3, // Adjust the size of the custom icon
+                'icon-allow-overlap': true,
             }
         }
     );
